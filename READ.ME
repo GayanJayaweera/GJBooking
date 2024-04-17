@@ -1,0 +1,28 @@
+﻿
+Year 2024 is appended as default   -  Wider Date validation
+
+Cleanup formating
+
+Case Insensitive
+
+Show detailed help with possible option when no or invalid  parameters are entered in the command line 
+
+in ADD check the 30 minute overlap before adding an appointment
+
+FIND Finds the first appointment avaiable 
+
+KEEP  only looks at Future Dates From Today and Automatically adds an appointment when a date is found . 
+
+
+
+THE BELOW SQL TABLE SHOULD BE CREATED BEFORE RUNNING THE APPLICATION 
+
+CREATE TABLE [dbo].[GJApptTest](
+      [ApptID] [int] IDENTITY(1,1) NOT NULL,
+      [ApptDate] [date] NULL,
+      [ApptStartTime] [time](7) NULL
+) ON [PRIMARY]
+GO
+
+
+ 
